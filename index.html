@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
+    <title>unltd Headfinder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Quiz</h1>
+        <div id="quiz-container">
+            <div id="question-container" class="mb-3">
+                <p id="question">Question 1: What do you prefer to do on the weekend?</p>
+            </div>
+            <div id="options-container">
+                <!-- Options will be loaded dynamically using JavaScript -->
+            </div>
+            <button id="next-button" class="btn btn-primary mt-3">Next</button>
+        </div>
+        <div id="result-container" class="text-center mt-3" style="display: none;">
+            <h2>Quiz Result</h2>
+            <p id="result-text">Your result will be displayed here.</p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
