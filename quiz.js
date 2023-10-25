@@ -1,49 +1,266 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const treeData = {
+    const questions = {
         position: {
-            question: "What position do you play?",
+            question: "What position do you play? (See assortment doc for heads by position)",
             options: {
                 attack: {
-                    question: "As an Attack, do you prefer dodging or shooting?",
+                    question: "ATTACK QUESTIONS",
                     options: {
-                        dodging: {
-                            result: "You are an aggressive attacker who loves dodging!",
+                        typeOfAttackman: {
+                            question: "What type of attackman are you?",
+                            options: {
+                                dodger: {},
+                                feeder: {},
+                                shooter: {},
+                                creaseRat: {},
+                                balancedAttackman: {},
+                            },
                         },
-                        shooting: {
-                            result: "You are a sharpshooter when it comes to scoring!",
+                        fieldPosition: {
+                            question: "Where do you position yourself on the field?",
+                            options: {
+                                behindTheNetAtX: {},
+                                inFrontOfTheNetOnTheCrease: {},
+                                onTheWings: {},
+                            },
+                        },
+                        fastBreakLocation: {
+                            question: "Where do you like to be on the fast break?",
+                            options: {
+                                point: {},
+                                second: {},
+                                third: {},
+                            },
+                        },
+                        preferredShotType: {
+                            question: "Preferred shot type?",
+                            options: {
+                                catchAndShoot: {},
+                                timeAndRoom: {},
+                                offADodge: {},
+                            },
                         },
                     },
                 },
-                middie: {
-                    question: "As a Middie, do you like playing offense or defense?",
+                midfield: {
+                    question: "MIDFIELD QUESTIONS",
                     options: {
-                        offense: {
-                            result: "You are an offensive-minded midfielder!",
+                        typeOfMidfielder: {
+                            question: "What type of midfielder are you?",
+                            options: {
+                                downhillDodger: {},
+                                feeder: {},
+                                outsideShooter: {},
+                                offBallCutter: {},
+                                balancedMiddie: {},
+                            },
                         },
-                        defense: {
-                            result: "You play a crucial role in midfield defense!",
+                        preferredSpotOnClear: {
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                carryingTheBall: {},
+                                breakingUpTheField: {},
+                                trailingMiddie: {},
+                            },
+                        },
+                        favoritePlaceToShootFrom: {
+                            question: "Favorite place to shoot from?",
+                            options: {
+                                outsideWithTimeAndRoom: {},
+                                inTightCatchAndShoot: {},
+                                downTheAlleyOnTheRun: {},
+                                acrossTheMiddleOnTheRun: {},
+                            },
                         },
                     },
                 },
-                defense: {
-                    question: "As a Defense, are you more focused on 1-on-1 or team defense?",
+                shortStickDmiddie: {
+                    question: "SHORT STICK D-MIDDIE QUESTIONS",
                     options: {
-                        oneOnOne: {
-                            result: "You excel in 1-on-1 defensive situations!",
+                        typeOfShortStickDmiddie: {
+                            question: "What type of short stick D-middie are you?",
+                            options: {
+                                groundballMachine: {},
+                                transitionDefenseMiddie: {},
+                                lockdownDefender: {},
+                                balanced: {},
+                            },
                         },
-                        team: {
-                            result: "You are a strong team defender!",
+                        defensiveMentality: {
+                            question: "Defensive Mentality",
+                            options: {
+                                patient: {},
+                                takeawayCheck: {},
+                                strengthAndBody: {},
+                                strategicOffBall: {},
+                            },
+                        },
+                        dodgeFrequency: {
+                            question: "How often do you dodge in a game?",
+                            options: {
+                                never: {},
+                                oneToTwoTimes: {},
+                                threeOrMoreTimes: {},
+                                everyChanceIGet: {},
+                            },
+                        },
+                        preferredSpotOnClear: {
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                carryingTheBall: {},
+                                breakingUpTheField: {},
+                                trailingMiddie: {},
+                            },
+                        },
+                    },
+                },
+                faceOffSpecialist: {
+                    question: "FACE-OFF SPECIALIST QUESTIONS",
+                    options: {
+                        gripPreference: {
+                            question: "What grip do you like to use?",
+                            options: {
+                                motorcycle: {},
+                                traditional: {},
+                            },
+                        },
+                        ballWinningPreference: {
+                            question: "Where do you prefer to win the ball to?",
+                            options: {
+                                forwardToYourself: {},
+                                toTheWing: {},
+                                backwards: {},
+                            },
+                        },
+                        clampMethodPreference: {
+                            question: "What clamp method do you most often use?",
+                            options: {
+                                pinchAndPop: {},
+                                sweepToTheSide: {},
+                                jamOpponent: {},
+                            },
+                        },
+                    },
+                },
+                longStickMiddie: {
+                    question: "LONG STICK MIDDIE QUESTIONS",
+                    options: {
+                        typeOfLongStickMiddie: {
+                            question: "What type of long stick middie are you?",
+                            options: {
+                                groundballMachine: {},
+                                takeawayCheckSpecialist: {},
+                                offensiveThreat: {},
+                                balanced: {},
+                            },
+                        },
+                        defensiveMentality: {
+                            question: "Defensive mentality",
+                            options: {
+                                patient: {},
+                                takeawayCheck: {},
+                                strengthAndBody: {},
+                                strategicOffBall: {},
+                            },
+                        },
+                        offensiveTransitionFrequency: {
+                            question: "How often do you push offensive transition in a game?",
+                            options: {
+                                never: {},
+                                oneToTwoTimes: {},
+                                threeOrMoreTimes: {},
+                                everyChanceIGet: {},
+                            },
+                        },
+                        ballPossessionPreference: {
+                            question: "What is your likely choice with the ball in your stick?",
+                            options: {
+                                passToAnyoneOpen: {},
+                                findAnOpenShortStick: {},
+                                dodgeToOpenSpace: {},
+                                shoot: {},
+                            },
+                        },
+                    },
+                },
+                closeDefense: {
+                    question: "CLOSE DEFENSE QUESTIONS",
+                    options: {
+                        typeOfDefender: {
+                            question: "What type of defender are you?",
+                            options: {
+                                groundballMachine: {},
+                                takeawayCheckSpecialist: {},
+                                twoWayDefender: {},
+                                balanced: {},
+                            },
+                        },
+                        defensiveMentality: {
+                            question: "Defensive mentality",
+                            options: {
+                                patient: {},
+                                takeawayCheck: {},
+                                strengthAndBody: {},
+                                strategicOffBall: {},
+                            },
+                        },
+                        preferredClearingMethod: {
+                            question: "Preferred clearing method?",
+                            options: {
+                                notTouchingTheBall: {},
+                                multipleShortPasses: {},
+                                longPassUpTheField: {},
+                                carryingOverTheMidlineYourself: {},
+                            },
+                        },
+                        carryFrequency: {
+                            question: "How often do you carry the ball over the midline?",
+                            options: {
+                                never: {},
+                                oneToTwoTimesPerGame: {},
+                                threeOrMoreTimesPerGame: {},
+                                everyChanceIGet: {},
+                            },
                         },
                     },
                 },
                 goalie: {
-                    result: "You are the last line of defense as a goalie!",
+                    question: "GOALIE QUESTIONS",
+                    options: {
+                        yearsOfExperience: {
+                            question: "How long have you been playing?",
+                            options: {
+                                lessThanOneYear: {},
+                                oneToThreeYears: {},
+                                fourToSixYears: {},
+                                sevenPlusYears: {},
+                            },
+                        },
+                        clearingPreference: {
+                            question: "Most common clear",
+                            options: {
+                                carryTheBallYourself: {},
+                                slowOutletToADefender: {},
+                                quickOutletToAMiddie: {},
+                            },
+                        },
+                        ageLevel: {
+                            question: "What age level are you playing at?",
+                            options: {
+                                youth: {},
+                                middleSchool: {},
+                                highSchool: {},
+                                collegiate: {},
+                            },
+                        },
+                    },
                 },
             },
         },
     };
+    
 
-    let currentStep = treeData.position;
+    let currentStep = questions.position;
     let result = null;
 
     const questionContainer = document.getElementById("question-container");
