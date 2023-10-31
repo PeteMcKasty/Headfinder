@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const questions = {
         position: {
-            question: "What position do you play? (See assortment doc for heads by position)",
+            question: "What position do you play?",
             options: {
                 attack: {
-                    question: "ATTACK QUESTIONS",
+                    question: "Attack Questions",
                     options: {
                         typeOfAttackman: {
                             question: "What type of attackman are you?",
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 midfield: {
-                    question: "MIDFIELD QUESTIONS",
+                    question: "Midfield Questions",
                     options: {
                         typeOfMidfielder: {
                             question: "What type of midfielder are you?",
@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         },
                     },
                 },
-                shortStickDmiddie: {
-                    question: "SHORT STICK D-MIDDIE QUESTIONS",
+                shortStickDMiddie: {
+                    question: "Short Stick D-Middie Questions",
                     options: {
-                        typeOfShortStickDmiddie: {
-                            question: "What type of short stick D-middie are you?",
+                        typeOfShortStickDMiddie: {
+                            question: "What type of short stick D-Middie are you?",
                             options: {
                                 groundballMachine: {},
                                 transitionDefenseMiddie: {},
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 faceOffSpecialist: {
-                    question: "FACE-OFF SPECIALIST QUESTIONS",
+                    question: "Face-Off Specialist Questions",
                     options: {
                         gripPreference: {
                             question: "What grip do you like to use?",
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 longStickMiddie: {
-                    question: "LONG STICK MIDDIE QUESTIONS",
+                    question: "Long Stick Middie Questions",
                     options: {
                         typeOfLongStickMiddie: {
                             question: "What type of long stick middie are you?",
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 closeDefense: {
-                    question: "CLOSE DEFENSE QUESTIONS",
+                    question: "Close Defense Questions",
                     options: {
                         typeOfDefender: {
                             question: "What type of defender are you?",
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 goalie: {
-                    question: "GOALIE QUESTIONS",
+                    question: "Goalie Questions",
                     options: {
                         yearsOfExperience: {
                             question: "How long have you been playing?",
@@ -258,6 +258,8 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         },
     };
+    
+    
     
 
     let currentStep = questions.position;
