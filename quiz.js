@@ -3,263 +3,301 @@ document.addEventListener("DOMContentLoaded", function() {
         position: {
             question: "What position do you play?",
             options: {
-                attack: {
-                    question: "Attack Questions",
+                Attack: {
+                    question: "What type of attackman are you?",
                     options: {
-                        typeOfAttackman: {
-                            question: "What type of attackman are you?",
-                            options: {
-                                dodger: {},
-                                feeder: {},
-                                shooter: {},
-                                creaseRat: {},
-                                balancedAttackman: {},
-                            },
-                        },
-                        fieldPosition: {
+                        Dodger: {
                             question: "Where do you position yourself on the field?",
                             options: {
-                                behindTheNetAtX: {},
-                                inFrontOfTheNetOnTheCrease: {},
-                                onTheWings: {},
+                                "Behind the net at X": {
+                                    question: "Where do you like to be on the fast break?",
+                                    options: {
+                                        Point: {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "2nd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "3rd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                    },
+                                },
+                                "In front of the net on the crease": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                                "On the wings": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
                             },
                         },
-                        fastBreakLocation: {
-                            question: "Where do you like to be on the fast break?",
+                        Feeder: {
+                            question: "Where do you position yourself on the field?",
                             options: {
-                                point: {},
-                                second: {},
-                                third: {},
+                                "Behind the net at X": {
+                                    question: "Where do you like to be on the fast break?",
+                                    options: {
+                                        Point: {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "2nd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "3rd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                    },
+                                },
+                                "In front of the net on the crease": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                                "On the wings": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
                             },
                         },
-                        preferredShotType: {
-                            question: "Preferred shot type?",
+                        Shooter: {
+                            question: "Where do you position yourself on the field?",
                             options: {
-                                catchAndShoot: {},
-                                timeAndRoom: {},
-                                offADodge: {},
+                                "Behind the net at X": {
+                                    question: "Where do you like to be on the fast break?",
+                                    options: {
+                                        Point: {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "2nd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "3rd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                    },
+                                },
+                                "In front of the net on the crease": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                                "On the wings": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                            },
+                        },
+                        "Crease Rat": {
+                            question: "Where do you position yourself on the field?",
+                            options: {
+                                "Behind the net at X": {
+                                    question: "Where do you like to be on the fast break?",
+                                    options: {
+                                        Point: {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "2nd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "3rd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                    },
+                                },
+                                "In front of the net on the crease": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                                "On the wings": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                            },
+                        },
+                        BalancedAttackman: {
+                            question: "Where do you position yourself on the field?",
+                            options: {
+                                "Behind the net at X": {
+                                    question: "Where do you like to be on the fast break?",
+                                    options: {
+                                        Point: {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "2nd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                        "3rd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            },
+                                        },
+                                    },
+                                },
+                                "In front of the net on the crease": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
+                                "On the wings": {
+                                    question: "Preferred shot type?",
+                                    options: {
+                                        "Catch and shoot": { result: "Result for Catch and shoot" },
+                                        "Time and room": { result: "Result for Time and room" },
+                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                    },
+                                },
                             },
                         },
                     },
                 },
-                midfield: {
-                    question: "Midfield Questions",
+                // Continue with options and questions for other positions
+                Midfield: {
+                    question: "What type of midfielder are you?",
                     options: {
-                        typeOfMidfielder: {
-                            question: "What type of midfielder are you?",
-                            options: {
-                                downhillDodger: {},
-                                feeder: {},
-                                outsideShooter: {},
-                                offBallCutter: {},
-                                balancedMiddie: {},
-                            },
-                        },
-                        preferredSpotOnClear: {
-                            question: "Preferred spot on a clear?",
-                            options: {
-                                carryingTheBall: {},
-                                breakingUpTheField: {},
-                                trailingMiddie: {},
-                            },
-                        },
-                        favoritePlaceToShootFrom: {
-                            question: "Favorite place to shoot from?",
-                            options: {
-                                outsideWithTimeAndRoom: {},
-                                inTightCatchAndShoot: {},
-                                downTheAlleyOnTheRun: {},
-                                acrossTheMiddleOnTheRun: {},
-                            },
-                        },
+                        // Add options and questions for midfield
                     },
                 },
-                shortStickDMiddie: {
-                    question: "Short Stick D-Middie Questions",
+                ShortStickDMiddie: {
+                    question: "What type of short stick D-Middie are you?",
                     options: {
-                        typeOfShortStickDMiddie: {
-                            question: "What type of short stick D-Middie are you?",
-                            options: {
-                                groundballMachine: {},
-                                transitionDefenseMiddie: {},
-                                lockdownDefender: {},
-                                balanced: {},
-                            },
-                        },
-                        defensiveMentality: {
-                            question: "Defensive Mentality",
-                            options: {
-                                patient: {},
-                                takeawayCheck: {},
-                                strengthAndBody: {},
-                                strategicOffBall: {},
-                            },
-                        },
-                        dodgeFrequency: {
-                            question: "How often do you dodge in a game?",
-                            options: {
-                                never: {},
-                                oneToTwoTimes: {},
-                                threeOrMoreTimes: {},
-                                everyChanceIGet: {},
-                            },
-                        },
-                        preferredSpotOnClear: {
-                            question: "Preferred spot on a clear?",
-                            options: {
-                                carryingTheBall: {},
-                                breakingUpTheField: {},
-                                trailingMiddie: {},
-                            },
-                        },
+                        // Add options and questions for short stick D-Middie
                     },
                 },
-                faceOffSpecialist: {
+                FaceOffSpecialist: {
                     question: "Face-Off Specialist Questions",
                     options: {
-                        gripPreference: {
-                            question: "What grip do you like to use?",
-                            options: {
-                                motorcycle: {},
-                                traditional: {},
-                            },
-                        },
-                        ballWinningPreference: {
-                            question: "Where do you prefer to win the ball to?",
-                            options: {
-                                forwardToYourself: {},
-                                toTheWing: {},
-                                backwards: {},
-                            },
-                        },
-                        clampMethodPreference: {
-                            question: "What clamp method do you most often use?",
-                            options: {
-                                pinchAndPop: {},
-                                sweepToTheSide: {},
-                                jamOpponent: {},
-                            },
-                        },
+                        // Add options and questions for face-off specialist
                     },
                 },
-                longStickMiddie: {
+                LongStickMiddie: {
                     question: "Long Stick Middie Questions",
                     options: {
-                        typeOfLongStickMiddie: {
-                            question: "What type of long stick middie are you?",
-                            options: {
-                                groundballMachine: {},
-                                takeawayCheckSpecialist: {},
-                                offensiveThreat: {},
-                                balanced: {},
-                            },
-                        },
-                        defensiveMentality: {
-                            question: "Defensive mentality",
-                            options: {
-                                patient: {},
-                                takeawayCheck: {},
-                                strengthAndBody: {},
-                                strategicOffBall: {},
-                            },
-                        },
-                        offensiveTransitionFrequency: {
-                            question: "How often do you push offensive transition in a game?",
-                            options: {
-                                never: {},
-                                oneToTwoTimes: {},
-                                threeOrMoreTimes: {},
-                                everyChanceIGet: {},
-                            },
-                        },
-                        ballPossessionPreference: {
-                            question: "What is your likely choice with the ball in your stick?",
-                            options: {
-                                passToAnyoneOpen: {},
-                                findAnOpenShortStick: {},
-                                dodgeToOpenSpace: {},
-                                shoot: {},
-                            },
-                        },
+                        // Add options and questions for long stick middie
                     },
                 },
-                closeDefense: {
+                CloseDefense: {
                     question: "Close Defense Questions",
                     options: {
-                        typeOfDefender: {
-                            question: "What type of defender are you?",
-                            options: {
-                                groundballMachine: {},
-                                takeawayCheckSpecialist: {},
-                                twoWayDefender: {},
-                                balanced: {},
-                            },
-                        },
-                        defensiveMentality: {
-                            question: "Defensive mentality",
-                            options: {
-                                patient: {},
-                                takeawayCheck: {},
-                                strengthAndBody: {},
-                                strategicOffBall: {},
-                            },
-                        },
-                        preferredClearingMethod: {
-                            question: "Preferred clearing method?",
-                            options: {
-                                notTouchingTheBall: {},
-                                multipleShortPasses: {},
-                                longPassUpTheField: {},
-                                carryingOverTheMidlineYourself: {},
-                            },
-                        },
-                        carryFrequency: {
-                            question: "How often do you carry the ball over the midline?",
-                            options: {
-                                never: {},
-                                oneToTwoTimesPerGame: {},
-                                threeOrMoreTimesPerGame: {},
-                                everyChanceIGet: {},
-                            },
-                        },
+                        // Add options and questions for close defense
                     },
                 },
-                goalie: {
+                Goalie: {
                     question: "Goalie Questions",
                     options: {
-                        yearsOfExperience: {
-                            question: "How long have you been playing?",
-                            options: {
-                                lessThanOneYear: {},
-                                oneToThreeYears: {},
-                                fourToSixYears: {},
-                                sevenPlusYears: {},
-                            },
-                        },
-                        clearingPreference: {
-                            question: "Most common clear",
-                            options: {
-                                carryTheBallYourself: {},
-                                slowOutletToADefender: {},
-                                quickOutletToAMiddie: {},
-                            },
-                        },
-                        ageLevel: {
-                            question: "What age level are you playing at?",
-                            options: {
-                                youth: {},
-                                middleSchool: {},
-                                highSchool: {},
-                                collegiate: {},
-                            },
-                        },
+                        // Add options and questions for goalie
                     },
                 },
             },
         },
     };
-    
-    
     
 
     let currentStep = questions.position;
@@ -276,18 +314,18 @@ document.addEventListener("DOMContentLoaded", function() {
             optionsContainer.innerHTML = "";
 
             if (currentStep.options) {
-                Object.keys(currentStep.options).forEach((option) => {
+                for (const option in currentStep.options) {
                     const optionElement = document.createElement("div");
                     optionElement.innerHTML = `
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="answer" id="option${option}" value="${option}">
                             <label class="form-check-label" for="option${option}">
-                                ${option[0].toUpperCase() + option.slice(1)} <!-- Capitalize first letter -->
+                                ${option}
                             </label>
                         </div>
                     `;
                     optionsContainer.appendChild(optionElement);
-                });
+                }
             }
         } else {
             showResult();
@@ -307,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const selectedAnswer = selectedOption.value;
             if (currentStep.options && currentStep.options[selectedAnswer]) {
                 currentStep = currentStep.options[selectedAnswer];
-                if (!currentStep.options) {
+                if (currentStep.result) {
                     result = currentStep.result;
                     currentStep = null;
                 }
