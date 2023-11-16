@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
         position: {
             question: "What position do you play?",
             options: {
-                Attack: {
+                "Attack": {
                     question: "What type of attackman are you?",
                     options: {
-                        Dodger: {
+                        "Dodger": {
                             question: "Where do you position yourself on the field?",
                             options: {
                                 "Behind the net at X": {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 },
                             },
                         },
-                        Feeder: {
+                        "Feeder": {
                             question: "Where do you position yourself on the field?",
                             options: {
                                 "Behind the net at X": {
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 },
                             },
                         },
-                        Shooter: {
+                        "Shooter": {
                             question: "Where do you position yourself on the field?",
                             options: {
                                 "Behind the net at X": {
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 },
                             },
                         },
-                        BalancedAttackman: {
+                        "Balanced Attackman": {
                             question: "Where do you position yourself on the field?",
                             options: {
                                 "Behind the net at X": {
@@ -259,37 +259,69 @@ document.addEventListener("DOMContentLoaded", function() {
                     },
                 },
                 // Continue with options and questions for other positions
-                Midfield: {
+                "Midfield": {
                     question: "What type of midfielder are you?",
                     options: {
+                        "Downhill Dodger":{
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                "Carrying the Ball": {
+                                    question: "Favorite place to shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Across the middle on the run"},
+                                    },  
+                                },
+                                "Breaking up the Field": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },
+                                "Trailing middie": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": {result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },                            
+                            }
+                        }
                         // Add options and questions for midfield
                     },
                 },
-                ShortStickDMiddie: {
+                "Short Stick D-Middie": {
                     question: "What type of short stick D-Middie are you?",
                     options: {
                         // Add options and questions for short stick D-Middie
                     },
                 },
-                FaceOffSpecialist: {
+                "Faceoff Specialist": {
                     question: "Face-Off Specialist Questions",
                     options: {
                         // Add options and questions for face-off specialist
                     },
                 },
-                LongStickMiddie: {
+                "Long Stick Middie": {
                     question: "Long Stick Middie Questions",
                     options: {
                         // Add options and questions for long stick middie
                     },
                 },
-                CloseDefense: {
+                "Close Defense": {
                     question: "Close Defense Questions",
                     options: {
                         // Add options and questions for close defense
                     },
                 },
-                Goalie: {
+                "Goalie": {
                     question: "Goalie Questions",
                     options: {
                         // Add options and questions for goalie
