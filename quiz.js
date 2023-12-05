@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         },
                     },
                 },
-                // Continue with options and questions for other positions
+                // Questions for Middie
                 "Midfield": {
                     question: "What type of midfielder are you?",
                     options: {
@@ -293,8 +293,135 @@ document.addEventListener("DOMContentLoaded", function() {
                                     },
                                 },                            
                             }
+                        },
+                        "Feeder":{
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                "Carrying the Ball": {
+                                    question: "Favorite place to shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Across the middle on the run"},
+                                    },  
+                                },
+                                "Breaking up the Field": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },
+                                "Trailing middie": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": {result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },                            
+                            }   
+                        },
+                        "Outside Shooter":{
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                "Carrying the Ball": {
+                                    question: "Favorite place to shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Across the middle on the run"},
+                                    },  
+                                },
+                                "Breaking up the Field": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },
+                                "Trailing middie": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": {result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },                            
+                            }   
+                        },
+                        "Off-ball Cutter":{
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                "Carrying the Ball": {
+                                    question: "Favorite place to shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Across the middle on the run"},
+                                    },  
+                                },
+                                "Breaking up the Field": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },
+                                "Trailing middie": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": {result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },                            
+                            }   
+                        },
+                        "Balanced Middie":{
+                            question: "Preferred spot on a clear?",
+                            options: {
+                                "Carrying the Ball": {
+                                    question: "Favorite place to shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Across the middle on the run"},
+                                    },  
+                                },
+                                "Breaking up the Field": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": { result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },
+                                "Trailing middie": {
+                                    question: "Favorite Place to Shoot from?",
+                                    options: {
+                                        "Outside with time and room": { result: "Result for Outside with time and room"},
+                                        "In tight catch and shoot": { result: "Result for In tight catch and shoot"},
+                                        "Down the alley on the run": { result: "Result for Down the alley on the run"},
+                                        "Across the middle on the run": {result: "Result for Acrosse the middle on the run"},
+                                    },
+                                },                            
+                            }   
                         }
-                        // Add options and questions for midfield
                     },
                 },
                 "Short Stick D-Middie": {
