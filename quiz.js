@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 "Behind the net at X": {
                                     question: "Where do you like to be on the fast break?",
                                     options: {
-                                        Point: {
+                                        "Point": {
                                             question: "Preferred shot type?",
                                             options: {
                                                 "Catch and shoot": { result: "Result for Catch and shoot" },
