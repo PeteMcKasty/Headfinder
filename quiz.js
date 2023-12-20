@@ -39,11 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
                                     },
                                 },
                                 "In front of the net on the crease": {
-                                    question: "Preferred shot type?",
+                                    question: "Where do you like to be on the fast break?",
                                     options: {
-                                        "Catch and shoot": { result: "Result for Catch and shoot" },
-                                        "Time and room": { result: "Result for Time and room" },
-                                        "Off a dodge": { result: "Result for Off a dodge" },
+                                        Point: {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },
+                                            }
+                                        }
                                     },
                                 },
                                 "On the wings": {
