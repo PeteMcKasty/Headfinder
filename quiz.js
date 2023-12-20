@@ -47,8 +47,24 @@ document.addEventListener("DOMContentLoaded", function() {
                                                 "Catch and shoot": { result: "Result for Catch and shoot" },
                                                 "Time and room": { result: "Result for Time and room" },
                                                 "Off a dodge": { result: "Result for Off a dodge" },
-                                            }
-                                        }
+                                            },
+                                        },
+                                        "2nd": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },  
+                                            },
+                                        },
+                                        "3rd:": {
+                                            question: "Preferred shot type?",
+                                            options: {
+                                                "Catch and shoot": { result: "Result for Catch and shoot" },
+                                                "Time and room": { result: "Result for Time and room" },
+                                                "Off a dodge": { result: "Result for Off a dodge" },  
+                                            },
+                                        },
                                     },
                                 },
                                 "On the wings": {
