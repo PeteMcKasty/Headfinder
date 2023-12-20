@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                                 "Off a dodge": { result: "Result for Off a dodge" },  
                                             },
                                         },
-                                        "3rd:": {
+                                        "3rd": {
                                             question: "Preferred shot type?",
                                             options: {
                                                 "Catch and shoot": { result: "Result for Catch and shoot" },
